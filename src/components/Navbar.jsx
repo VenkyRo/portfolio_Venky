@@ -80,17 +80,17 @@ const Navbar = () => {
                   </a>
                 </li>
               </Link>
+              <Link to="/follow">
+                <li>
+                  <a href="/follow" onClick={toggleMenu}>
+                    Follow
+                  </a>
+                </li>
+              </Link>
               <Link to="/contact">
                 <li>
                   <a href="/contact" onClick={toggleMenu}>
                     Contact
-                  </a>
-                </li>
-              </Link>
-              <Link to='/follow'>
-                <li>
-                  <a href="/follow" onClick={toggleMenu}>
-                    Follow
                   </a>
                 </li>
               </Link>
