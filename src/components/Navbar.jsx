@@ -14,8 +14,8 @@ const Navbar = () => {
     <>
       <div className="nav-bar">
         <nav id="desktop-nav">
-          <Link to="/" >
-            <div className="logo" >VENKATESWARLU SIRISETTY</div>
+          <Link to="/">
+            <div className="logo">VENKATESWARLU SIRISETTY</div>
           </Link>
           <div>
             <ul className="nav-links">
@@ -59,31 +59,41 @@ const Navbar = () => {
               <span></span>
             </div>
             <ul className="menu-links">
-              <li>
-                <a href="/about" onClick={toggleMenu}>
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="/experience" onClick={toggleMenu}>
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a href="/projects" onClick={toggleMenu}>
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="/contact" onClick={toggleMenu}>
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="/follow" onClick={toggleMenu}>
-                  Follow
-                </a>
-              </li>
+              <Link to="/about">
+                <li>
+                  <a href="/about" onClick={toggleMenu}>
+                    About
+                  </a>
+                </li>
+              </Link>
+              <Link to="/experience">
+                <li>
+                  <a href="/experience" onClick={toggleMenu}>
+                    Experience
+                  </a>
+                </li>
+              </Link>
+              <Link to="/projects">
+                <li>
+                  <a href="/projects" onClick={toggleMenu}>
+                    Projects
+                  </a>
+                </li>
+              </Link>
+              <Link to="/contact">
+                <li>
+                  <a href="/contact" onClick={toggleMenu}>
+                    Contact
+                  </a>
+                </li>
+              </Link>
+              <Link to='/follow'>
+                <li>
+                  <a href="/follow" onClick={toggleMenu}>
+                    Follow
+                  </a>
+                </li>
+              </Link>
             </ul>
           </div>
         </nav>
