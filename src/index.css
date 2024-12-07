@@ -1,0 +1,405 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light background */
+  color: #333; /* Text color */
+}
+
+footer {
+  background-color: #222;
+  color: #f1f1f1;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+footer .social-links a {
+  color: #f1f1f1;
+  font-size: 18px;
+ 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+#links{
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  color: #ff6f61;
+}
+
+.footer-copyright {
+  
+  font-size: 0.875rem; 
+  text-align: center;  
+  padding: 10px 0;     
+}
+#copy{
+  color: white;
+}
+
+
+/* Social Links Section */
+.social-links {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  gap: 10px; /* Add space between icons */
+  margin-top: 10px; /* Add space at the top */
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon i {
+  font-size: 18px; /* Set icon size */
+  color: white; /* Icon color */
+  transition: color 0.3s ease;
+}
+
+
+
+.social-icon:hover i {
+ color: #faa307; /* Keep the icon color white on hover */
+}
+
+
+
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: #333;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0;
+  overflow: hidden;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  width: 80px;
+  padding: 2px;
+}
+
+#twitter svg {
+  fill: #1da1f2;
+}
+
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github svg {
+  fill: #333;
+}
+
+/* Profile Card Styles */
+.profile-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.profile-card {
+  width: 400px;
+  max-width: 90%;
+  background: #0b2545;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  margin-top: 130px;
+}
+
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #faa307;
+}
+
+.profile-info h2 {
+  margin: 15px 0 5px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.profile-info h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #f48c06;
+}
+
+.about {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 15px 0;
+  color: #ffffff;
+}
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button-resume {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  left: 120px;
+  top: 5px;
+  align-items: center;
+  border: 1px solid #17795E;
+  background-color: #209978;
+  overflow: hidden;
+}
+
+.button-resume, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button-resume .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button-resume .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #17795E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-resume .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.button-resume:hover {
+  background: #17795E;
+}
+
+.button-resume:hover .button__text {
+  color: transparent;
+}
+
+.button-resume:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button-resume:active .button__icon {
+  background-color: #146c54;
+}
+
+.button-resume:active {
+  border: 1px solid #146c54;
+}
+
+
+
+
+
+/* Button Styles */
+.button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #0A66C2;
+  color: #ffffff;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  
+  border: none;
+  cursor: pointer;
+  transition: 0.6s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.button svg {
+  height: 20px;
+}
+
+.button:hover {
+  box-shadow: none;
+  background-color: #054a90;
+}
+
+
+.linkedin {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  margin: 20px 0; /* Adds some spacing around the button */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-info h2 {
+    font-size: 20px;
+  }
+
+  .profile-info h4 {
+    font-size: 14px;
+  }
+
+  .about {
+    font-size: 13px;
+  }
+
+  .button {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-btn:hover {
+    width: 120px;
+  }
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-info h2 {
+    font-size: 20px;
+  }
+
+  .profile-info h4 {
+    font-size: 14px;
+  }
+
+  .about {
+    font-size: 13px;
+  }
+
+  .social-icon {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    text-align: center;
+    padding: 8px 5px;
+    height: 300px; /* Set the height to 300px */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .linkedin .button {
+    display: block;
+    margin: 6px auto; 
+    width: 100%; /* Slightly smaller button width */
+    padding: 13px 10px; /* Adjust padding for a more compact button */
+    text-align: center;
+    font-size: 14px; /* Adjust font size for smaller screens */
+    background-color: #0077b5; /* LinkedIn brand color */
+    color: white; /* Make text white */
+    border-radius: 5px; /* Rounded corners for button */
+    border: none; /* Remove border */
+    text-decoration: none; /* Remove text underline */
+  }
+
+  .linkedin .button svg {
+    height: 18px; /* Slightly bigger icon size for visibility */
+    margin-right: 8px; /* Increase space between icon and text */
+  }
+
+  .footer-copyright {
+    font-size: 0.65rem; /* Smaller font size for copyright */
+    padding: 5px 0; /* Reduced padding to decrease overall height */
+  }
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 600px) {
+  .social-links {
+    gap: 15px; /* Adjust the gap on smaller screens */
+  }
+
+  .social-icon {
+    padding: 10px; /* Adjust the padding on smaller screens */
+  }
+
+  .social-icon i {
+    font-size: 20px; /* Adjust icon size on smaller screens */
+  }
+}

@@ -1,28 +1,39 @@
 import React from 'react'
 import "./App.css";
+import "./index.css"
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-import Navbar from './components/Navbar'
-import Profile from "./components/Profile";
-import About from './components/About';
-import Experince from './components/Experince';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+
+import Home from './page/Home';
+import { Route, Routes } from 'react-router-dom';
+import AboutPage from './page/AboutPage';
+import ExperincePage from './page/ExperincePage';
+import ProjectsPage from './page/ProjectsPage';
+import ContactPage from './page/ContactPage';
+import ProfileCardPage from './page/ProfileCardPage';
 
 
 const App = () => {
   return (
     <>
-   <Navbar></Navbar>
-   <Profile></Profile>
-   <About></About>
-   <Experince></Experince>
-   <Projects></Projects>
-   <Contact></Contact>
-   <Footer></Footer>
-    
+      <div>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/about" element={<AboutPage></AboutPage>}></Route>
+          <Route
+            path="/experience"
+            element={<ExperincePage></ExperincePage>}
+          ></Route>
+          <Route
+            path="/projects"
+            element={<ProjectsPage></ProjectsPage>}
+          ></Route>
+          <Route path="/contact" element={<ContactPage></ContactPage>}></Route>
+          <Route path="/follow" element={<ProfileCardPage></ProfileCardPage>}></Route>
+        </Routes>
+      </div>
     </>
-  )
+  );
 }
 
 export default App

@@ -37,6 +37,13 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  position: fixed;
+  top : 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .nav-links {
@@ -60,6 +67,10 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+ 
+}
+.title{
+  text-decoration: none;
 }
 
 .logo:hover {
@@ -154,6 +165,7 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  margin-top: 100px;
 }
 
 .section-container {
@@ -265,6 +277,7 @@ section {
 
 #about {
   position: relative;
+  margin-top: 130px;
 }
 
 .about-containers {
@@ -318,6 +331,7 @@ section {
 
 #experience {
   position: relative;
+  margin-top: 130px;
 }
 
 .experience-sub-title {
@@ -357,6 +371,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-top: 130px;
 }
 
 .color-container {
@@ -387,6 +402,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin-top: 100px;
 }
 
 .contact-info-upper-container {
@@ -436,14 +452,19 @@ footer p {
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
+    margin-top: 130px;
     margin-bottom: 6rem;
   }
   .about-containers {
     flex-wrap: wrap;
   }
+  .experience{
+    margin-top: 130px;
+  }
   #contact,
   #projects {
     height: fit-content;
+    margin-top: 130px;
   }
 }
 
@@ -453,6 +474,9 @@ footer p {
   }
   #hamburger-nav {
     display: flex;
+  }
+   .experience{
+    margin-top: 130px;
   }
   #experience,
   .experience-details-container {
@@ -483,13 +507,21 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+   
+   #experience{
+    margin-top: 130px;
+  }
+  #about{
+    margin-top: 130px;
+  }
   #contact,
   footer {
     height: 40vh;
   }
   #profile {
     height: 83vh;
-    margin-bottom: 0;
+    margin-bottom: -300px;
+   
   }
   article {
     font-size: 1rem;

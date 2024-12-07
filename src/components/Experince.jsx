@@ -1,6 +1,7 @@
 import React from "react";
 import checkmarkIcon from "/assets/checkmark.png";
 import arrowIcon from "/assets/arrow.png";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   return (
@@ -158,12 +159,14 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <button
-        className="btn btn-navigate"
-        onClick={() => (window.location.href = "./#projects")}
-      >
-        View Projects
-      </button>
+      
+        <button
+          className="btn btn-navigate"
+          onClick={() => (window.location.href = "/projects")}
+        >
+          View Projects
+        </button>
+      
     </section>
   );
 };
