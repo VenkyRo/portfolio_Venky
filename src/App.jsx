@@ -9,11 +9,11 @@ import './skill.css'
 import Home from './page/Home';
 import { Route, Routes } from 'react-router-dom';
 import AboutPage from './page/AboutPage';
-import ExperincePage from './page/ExperincePage';
+
 import ProjectsPage from './page/ProjectsPage';
 import ContactPage from './page/ContactPage';
 import ProfileCardPage from './page/ProfileCardPage';
-import Certificates from './page/CertificatePage';
+
 import CertificatePage from './page/CertificatePage';
 import PortfolioSkillsPage from './page/PortfolioSkillsPage';
 
