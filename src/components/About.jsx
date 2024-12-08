@@ -61,12 +61,7 @@ const About = () => (
         </div>
       </div>
     </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      className="icon arrow"
-      onclick="location.href='./#experience'"
-    />
+    
   </section>
 );
 
