@@ -111,7 +111,7 @@ a:hover {
   background-color: white;
   width: fit-content;
   max-height: 0;
-  overflow: hidden;
+  overflow: scroll;
   transition: all 0.3 ease-in-out;
 }
 
@@ -514,6 +514,11 @@ footer p {
   #about{
     margin-top: 130px;
   }
+
+ .hamburger-menu {
+    display: block;
+  }
+ 
   #contact,
   footer {
     height: 40vh;

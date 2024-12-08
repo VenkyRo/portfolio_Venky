@@ -20,7 +20,7 @@ const Navbar = () => {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/experience">Experience</Link>
+            <Link to="/experience">Certificates</Link>
           </li>
           <li>
             <Link to="/projects">Projects</Link>
@@ -30,6 +30,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/follow">Follow</Link>
+          </li>
+          <li>
+            <Link to="/skills">skills</Link>
           </li>
         </ul>
       </nav>
@@ -56,7 +59,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/experience" onClick={toggleMenu}>
-                Experience
+                Certificates
               </Link>
             </li>
             <li>
@@ -72,6 +75,11 @@ const Navbar = () => {
             <li>
               <Link to="/contact" onClick={toggleMenu}>
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/skills" onClick={toggleMenu}>
+                Skills
               </Link>
             </li>
           </ul>

@@ -1,0 +1,82 @@
+/* Portfolio Container */
+.portfolio-container {
+  padding: 10px;
+  text-align: center;
+  margin-top: 130px;
+}
+
+/* Heading Style */
+.portfolio-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns on larger screens */
+  gap: 20px; /* Space between the cards */
+  justify-items: center;
+}
+
+/* Skill Card */
+.skill-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px; /* Reduced width to fit four cards horizontally */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center; /* Center-aligns content */
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Skill Image */
+.skill-image {
+  width: 300px; /* Matches card width */
+  height: 180px; /* Reduced height */
+  object-fit: cover; /* Ensures the image fills the card proportionally */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.skill-card a {
+  text-decoration: none;
+}
+
+.skill-card a:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 1rem; /* Slightly smaller font size */
+  color: #555;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .portfolio-container{
+    margin-top: 150px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  .skill-card {
+    width: 90%; /* Adjusts card width for mobile */
+  }
+
+  .skill-name {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+}

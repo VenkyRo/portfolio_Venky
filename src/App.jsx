@@ -2,6 +2,8 @@ import React from 'react'
 import "./App.css";
 import "./index.css"
 import "bootstrap-icons/font/bootstrap-icons.css";
+import './cert.css'
+import './skill.css'
 
 
 import Home from './page/Home';
@@ -11,6 +13,9 @@ import ExperincePage from './page/ExperincePage';
 import ProjectsPage from './page/ProjectsPage';
 import ContactPage from './page/ContactPage';
 import ProfileCardPage from './page/ProfileCardPage';
+import Certificates from './page/CertificatePage';
+import CertificatePage from './page/CertificatePage';
+import PortfolioSkillsPage from './page/PortfolioSkillsPage';
 
 
 const App = () => {
@@ -22,7 +27,7 @@ const App = () => {
           <Route path="/about" element={<AboutPage></AboutPage>}></Route>
           <Route
             path="/experience"
-            element={<ExperincePage></ExperincePage>}
+            element={<CertificatePage></CertificatePage>}
           ></Route>
           <Route
             path="/projects"
@@ -30,6 +35,7 @@ const App = () => {
           ></Route>
           <Route path="/contact" element={<ContactPage></ContactPage>}></Route>
           <Route path="/follow" element={<ProfileCardPage></ProfileCardPage>}></Route>
+          <Route path="/skills" element={<PortfolioSkillsPage></PortfolioSkillsPage>}></Route>
         </Routes>
       </div>
     </>

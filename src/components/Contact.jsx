@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
             className="icon contact-icon email-icon"
           />
           <p>
-            <a href="sirisettyvenkatesh@gmail.com">
+            <a href="mailto:sirisettyvenkatesh@gmail.com">
               sirisettyvenkatesh@gmail.com
             </a>
           </p>
@@ -27,7 +27,8 @@ const Contact = () => {
           <p>
             <a
               href="https://www.linkedin.com/in/sirisetty-venkatesh-256bb8286/"
-              target="blank"
+              target="_blank" /* Corrected target to "_blank" for new tab */
+              rel="noopener noreferrer" /* Security recommendation */
             >
               LinkedIn
             </a>
@@ -36,6 +37,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;
