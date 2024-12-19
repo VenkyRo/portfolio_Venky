@@ -370,8 +370,10 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
+ 
   position: relative;
   margin-top: 130px;
+  margin-bottom: -350px;
 }
 
 .color-container {
@@ -441,6 +443,7 @@ article .icon {
 footer {
   height: 26vh;
   margin: 0 1rem;
+  margin-top: 350px;
 }
 
 footer p {
@@ -519,6 +522,12 @@ footer p {
     display: block;
   }
  
+  #projects{
+    margin-top: 270px;
+  }
+  .second-project{
+    margin-top: 500px;
+  }
   #contact,
   footer {
     height: 40vh;
